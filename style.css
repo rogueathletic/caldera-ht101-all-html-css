@@ -4,7 +4,10 @@ remove injected external link icon from main theme
 
 
 * {
-    scroll-margin-top: 40px
+    scroll-margin-top: 40px;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* needs to be removed fomr core theme */
