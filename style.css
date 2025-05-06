@@ -185,12 +185,15 @@ remove injected external link icon from main theme
 .hottubtips-template .elementor-section p,
 .hottubtips-template .elementor-section li,
 .hottubtips-template .elementor-section .paragraph,
-.hottubtips-template .elementor-section .list-item,
-.hottubtips-template .elementor-section p a {
+.hottubtips-template .elementor-section .list-item {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     margin: 16px 0;
+}
+
+.hottubtips-template .elementor-section p a {
+    line-height: 30px
 }
 
 .hottubtips-template .elementor-section p>sup,
