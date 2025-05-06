@@ -150,6 +150,13 @@ remove injected external link icon from main theme
 .hottubtips-template .elementor-section .block-quote {
     position: relative;
 }
+
+.hottubtips-template .elementor-section a {
+	color: #f57b56;
+	text-decoratino: none;
+	font-weight: 700;
+}
+
     
 .hottubtips-template .elementor-section .block-quote p:first-of-type::after,
 .hottubtips-template .elementor-section .block-quote p:first-of-type::before {
