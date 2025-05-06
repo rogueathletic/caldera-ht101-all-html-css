@@ -63,7 +63,6 @@ remove injected external link icon from main theme
     margin-left: 0 !important;
 }
 
-
 @media (min-width: 768px) {
     /* No Tablet image. Rusing Desktop image */
     .hottubtips-template .ht101-hero-secton {
@@ -102,7 +101,6 @@ remove injected external link icon from main theme
 
     .hottubtips-template .blogInfo {
         padding: 0 24px !important;
-
     }
 }
 /* outside of editable body css END */
@@ -124,7 +122,6 @@ remove injected external link icon from main theme
     color: #696969;
 }
 
-
 .hottubtips-template h1,
 .hottubtips-template .elementor-section h1,
 .hottubtips-template .elementor-section .h-one,
@@ -142,7 +139,7 @@ remove injected external link icon from main theme
     font-size:   30px;
     line-height: 38px;
     font-weight: 700;
-    color:     #F47A55;
+    color:       #F47A55;
 }
 
 .hottubtips-template .elementor-section h3,
@@ -188,7 +185,6 @@ remove injected external link icon from main theme
     font-size:   20px;
     line-height: 30px;
     font-weight: 400;
-
 }
 
 .hottubtips-template .elementor-section p a {
@@ -205,6 +201,7 @@ remove injected external link icon from main theme
 
 .hottubtips-template .elementor-section .block-quote {
     position: relative;
+    padding:  0 32px;
 }
 
 .hottubtips-template .elementor-section a {
@@ -217,12 +214,12 @@ remove injected external link icon from main theme
 .hottubtips-template .elementor-section .block-quote p:first-of-type::before {
     content:  '"';
     position: relative;
-
 }
 
 .hottubtips-template .elementor-section .block-quote p:first-of-type::after {
     left: -4px;
     top:  -2px;
+    font-style: italic;
 }
 
 .hottubtips-template .elementor-section .block-quote p:first-of-type::before {
@@ -310,9 +307,8 @@ remove injected external link icon from main theme
     list-style-type: decimal;
 }
 
-
 .hottubtips-template .btn-primary {
-    padding:      4px 20px;
+    padding:      4px 16px;
     border:       2px solid #f57b56;
     background:  #f57b56;
     color:       #fff !important;
@@ -327,7 +323,7 @@ remove injected external link icon from main theme
 }
 
 .hottubtips-template .elementor-section .btn-secondary {
-    padding:        4px 20px;
+    padding:        4px 16px;
     border:         2px solid #f57b56;
     background:   #fff;
     border-radius:  50px;
@@ -341,7 +337,7 @@ remove injected external link icon from main theme
 }
 
 .hottubtips-template .elementor-section .btn-terteriary {
-    padding:       4px 20px;
+    padding:       4px 16px;
     border-radius: 50px;
     border:        2px solid transparent;
 }
@@ -465,4 +461,8 @@ remove injected external link icon from main theme
         margin: 16px auto 16px 0;
     }
 
+    .hottubtips-template .elementor-section .block-quote {
+        position: relative;
+        padding:  0 24px;
+    }
 }
