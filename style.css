@@ -10,57 +10,105 @@ remove injected external link icon from main theme
     font-style: normal;
 }
 
-/* needs to be removed fomr core theme */
+/* outside of editable body css start */
 .hottubtips-template .fa-external-link-alt {
-	display: none
+    display: none
 }
 
-.hottubtips-template  .ht101-hero-secton {
+.hottubtips-template .ht101-hero-secton {
     position: relative;
     padding: 0;
     margin: 0;
 }
 
-.hottubtips-template  .breadcrumbs {
+.hottubtips-template .breadcrumbs {
     padding-top: 20px;
 }
 
-.hottubtips-template  .blogInfo {
+.hottubtips-template .blogInfo {
     padding: 10px 10px 0 64px;
 }
 
-.hottubtips-template  .titleInfo {
+.hottubtips-template .titleInfo {
     padding: 0 0 20px 25px;
 }
 
-.hottubtips-template  .btn-wrapper {
+.hottubtips-template .btn-wrapper {
     margin-top: 56px;
     text-align: center;
 }
 
-.hottubtips-template  .shortcode_social {
+.hottubtips-template .shortcode_social {
     padding: 0 0 70px 25px;
 }
-.hottubtips-template  .cta_link {
+
+.hottubtips-template .cta_link {
     padding-bottom: 72px;
 }
 
 .hottubtips-template .heateor_sss_sharing_ul a {
     max-height: 30px;
-    margin:     0!important;
-    font-size:  18px!important;
-    color:    #f57b56;
+    margin:     0 !important;
+    font-size:  18px !important;
+    color:     #f57b56;
 }
 
 .hottubtips-template .heateor_sss_sharing_ul a.heateor_sss_button_pinterest {
-    padding-right: 3px!important;
+    padding-right: 3px !important;
 }
 
 .heateor_sss_square_count {
     font-weight: 700;
-    font-size:   14px;
-    margin-left: 0!important;
+    font-size: 14px;
+    margin-left: 0 !important;
 }
+
+.hottubtips-template .ht101-hero-secton {
+    background: url('<?php echo $desktop_image_url;?>') center no-repeat;
+    background-size: cover;
+    height: 33.33vw;
+}
+
+@media(max-width: 1024px) and (min-width: 768px) {
+    .hottubtips-template .ht101-hero-secton {
+        background: url('<?php echo $desktop_image_url;?>') center no-repeat;
+        background-size: cover;
+        height: 33.33vw;
+    }
+}
+
+@media(max-width: 767px) {
+    .hottubtips-template .ht101-hero-secton {
+        background: url('<?php echo $mobile_image_url;?>') center no-repeat;
+        background-size: cover;
+        height: 100vw;
+    }
+
+    .hottubtips-template .byline {
+        -webkit-box-orient:    vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction:    column;
+        flex-direction:        column;
+    }
+
+    .hottubtips-template .blogInfo {
+        margin-top: 32px;
+    }
+
+    .hottubtips-template .htintro {
+        padding: 0 24px !important;
+    }
+
+    .hottubtips-template .titleInfo {
+        padding: 0 0 20px 0px !important;
+    }
+
+    .hottubtips-template .blogInfo {
+        padding: 0 24px !important;
+
+    }
+}
+/* outside of editable body css END */
 
 .hottubtips-template .elementor-section h1,
 .hottubtips-template .elementor-section h3,
@@ -79,71 +127,77 @@ remove injected external link icon from main theme
     color: #696969;
 }
 
+
+.hottubtips-template h1,
 .hottubtips-template .elementor-section h1,
 .hottubtips-template .elementor-section .h-one,
 .hottubtips-template h1.titleInfo {
-    margin:      56px auto 36px;
-    font-size:   50px;
+    margin: 56px auto 36px;
+    font-size: 50px;
     line-height: 60px;
     font-weight: 600;
-    max-width:   767px;
+    max-width: 767px;
 }
 
 .hottubtips-template .elementor-section h2,
 .hottubtips-template .elementor-section .h-two {
-    margin:      56px 0 0;
-    font-size:   30px;
+    margin: 48px 0 0;
+    font-size: 30px;
     line-height: 38px;
     font-weight: 700;
-    color:       #F47A55;
+    color: #F47A55;
 }
 
 .hottubtips-template .elementor-section h3,
 .hottubtips-template .elementor-section .h-three {
-    margin:         40px 0 8px;
-    font-size:      20px;
-    line-height:    26px;
-    font-weight:    600;
+    margin: 40px 0 8px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
     letter-spacing: 2px;
 }
 
 .hottubtips-template .elementor-section h4,
 .hottubtips-template .elementor-section .h-four {
-    font-size:   20px;
+    margin: 32px 0 8px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 700;
 }
 
 .hottubtips-template .elementor-section h5,
 .hottubtips-template .elementor-section .h-five {
-    font-size:   16px;
+    margin: 24px 0 8px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 400;
 }
 
 .hottubtips-template .elementor-section h6,
 .hottubtips-template .elementor-section .h-six {
-    font-size:   15px;
+    margin: 16px 0 4px;
+    font-size: 15px;
     line-height: 20px;
     font-weight: 400;
-    font-style:  italic;
+    font-style: italic;
 }
 
 .hottubtips-template .elementor-section p,
 .hottubtips-template .elementor-section li,
 .hottubtips-template .elementor-section .paragraph,
-.hottubtips-template .elementor-section .list-item {
-    font-size:   20px;
+.hottubtips-template .elementor-section .list-item,
+.hottubtips-template .elementor-section p a {
+    font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-    margin:      16px 0;
+    margin: 16px 0;
 }
 
-.hottubtips-template .elementor-section p > sup,
-.hottubtips-template .elementor-section p > sub,
+.hottubtips-template .elementor-section p>sup,
+.hottubtips-template .elementor-section p>sub,
 .hottubtips-template .elementor-section .subscript,
 .hottubtips-template .elementor-section .superscript {
-    margin:   0 1px;
+    margin: 0 1px;
     position: relative;
 }
 
@@ -152,41 +206,40 @@ remove injected external link icon from main theme
 }
 
 .hottubtips-template .elementor-section a {
-	color: #f57b56;
-	text-decoration: none;
-	font-weight: 700;
+    color: #f57b56;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-    
 .hottubtips-template .elementor-section .block-quote p:first-of-type::after,
 .hottubtips-template .elementor-section .block-quote p:first-of-type::before {
-    content:  '"';
+    content: '"';
     position: relative;
 
 }
 
 .hottubtips-template .elementor-section .block-quote p:first-of-type::after {
     left: -4px;
-    top:  -2px;
+    top: -2px;
 }
 
 .hottubtips-template .elementor-section .block-quote p:first-of-type::before {
     right: -4px;
-    top:   -2px;
+    top: -2px;
 }
 
 .hottubtips-template figure {
-    position:   relative;
+    position: relative;
     max-height: 490px;
-    overflow:   hidden;
+    overflow: hidden;
     padding: 16px 0;
 }
 
 .hottubtips-template .htintro {
     max-width: 1233px;
-    position:  relative;
-    margin:    auto;
-    padding:   0 16px;
+    position: relative;
+    margin: auto;
+    padding: 0 16px;
 }
 
 .hottubtips-template .breadcrumbs .breads {
@@ -200,45 +253,41 @@ remove injected external link icon from main theme
 }
 
 .hottubtips-template .blogInfo {
-    max-width:     776px;
-    position:      relative;
-    /* margin-top:    48px !important; */
-    /* margin-right:  auto; */
-    /* margin-bottom: 0; */
-    /* margin-left:   0; */
+    max-width: 776px;
+    position: relative;
     margin: 48px auto 0;
-    padding:       0 16px!important;
+    padding: 0 16px !important;
 }
 
 .hottubtips-template .byline {
-    display:       -webkit-box;
-    display:       -ms-flexbox;
-    display:       flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 20px;
-    font-size:     16px;
-    line-height:   20px;
-    font-weight:   400;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 .hottubtips-template .dateModified {
     margin-right: 4px;
 }
 
-.hottubtips-template #primary + .likesBox,
+.hottubtips-template #primary+.likesBox,
 .hottubtips-template .elementor-section {
     max-width: 776px;
-    position:  relative;
-    margin:    0 auto 56px;
-    padding:   0 16px;
+    position: relative;
+    margin: 0 auto 56px;
+    padding: 0 16px;
 }
 
-.hottubtips-template #primary + .likesBox a::after,
+.hottubtips-template #primary+.likesBox a::after,
 .hottubtips-template #primary .likesBox a::after {
     content: "";
 }
 
 .hottubtips-template .elementor-section li {
-    margin-top:    16px;
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -252,62 +301,59 @@ remove injected external link icon from main theme
 
 .hottubtips-template .elementor-section ul {
     list-style-type: disc;
-    margin-left:     16px;
+    margin-left: 16px;
 }
 
 .hottubtips-template .elementor-section ol {
     list-style-type: decimal;
 }
 
-.hottubtips-template .btn {
-    text-transform: capitalize;
-}
 
-.hottubtips-template .btn.btn-primary {
-    padding:       4px 20px;
-    border:        2px solid #f57b56;
-    background:    #f57b56;
-    color:         #fff;
+.hottubtips-template .btn-primary {
+    padding: 4px 20px;
+    border: 2px solid #f57b56;
+    background: #f57b56;
+    color: #fff !important;
     border-radius: 50px;
-    font-weight:   700;
+    font-weight: 700;
 }
 
-.hottubtips-template .btn.btn-primary:hover,
-.hottubtips-template .btn.btn-primary:active {
-    background:   #bc4b2a;
+.hottubtips-template .btn-primary:hover,
+.hottubtips-template .btn-primary:active {
+    background: #bc4b2a;
     border-color: #bc4b2a;
 }
 
-.hottubtips-template .elementor-section .btn.btn-secondary {
-    padding:        4px 20px;
-    border:         2px solid #f57b56;
-    background:     #fff;
-    border-radius:  50px;
+.hottubtips-template .elementor-section .btn-secondary {
+    padding: 4px 20px;
+    border: 2px solid #f57b56;
+    background: #fff;
+    border-radius: 50px;
     text-transform: capitalize;
-    font-weight:    700;
+    font-weight: 700;
 }
 
-.hottubtips-template .elementor-section .btn.btn-secondary:hover,
-.hottubtips-template .elementor-section .btn.btn-secondary:active {
+.hottubtips-template .elementor-section .btn-secondary:hover,
+.hottubtips-template .elementor-section .btn-secondary:active {
     border-color: #bc4b2a;
 }
 
-.hottubtips-template .elementor-section .btn.btn-terteriary {
-    padding:       4px 20px;
+.hottubtips-template .elementor-section .btn-terteriary {
+    padding: 4px 20px;
     border-radius: 50px;
-    border:        2px solid transparent;
+    border: 2px solid transparent;
 }
 
-.hottubtips-template .elementor-section .btn.btn-terteriary:hover,
-.hottubtips-template .elementor-section .btn.btn-terteriary:active {
-    background:   #ddd;
+.hottubtips-template .elementor-section .btn-terteriary:hover,
+.hottubtips-template .elementor-section .btn-terteriary:active {
+    background: #ddd;
     border-color: #ddd;
 }
 
 .hottubtips-template a[target]:not(.btn)::after {
-    content:        "\2000";
-    background:     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="grey" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>') center no-repeat;
-    margin-left:    3px;
+    content: "\2000";
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="grey" d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg>') center no-repeat;
+    margin-left: 3px;
     vertical-align: super;
 }
 
@@ -316,10 +362,10 @@ remove injected external link icon from main theme
 }
 
 .hottubtips-template .elementor-section table {
-    width:           100%;
-    border:          1px solid #ccc;
-    margin:          40px auto;
-    text-align:      center;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    text-align: center;
     border-collapse: collapse;
 }
 
@@ -328,96 +374,74 @@ remove injected external link icon from main theme
 }
 
 .hottubtips-template .elementor-section table td {
-    border-left:   1px solid #ddd;
+    border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
-.ht101-hero-secton {
-        background: url('<?php echo $desktop_image_url;?>') center no-repeat;
-        background-size: cover;
-        height: 33.33vw;
-    }
-
 @media(max-width: 1024px) and (min-width: 768px) {
-    .ht101-hero-secton {
-        background: url('<?php echo $tablet_image_url;?>') center no-repeat;
-        background-size: cover;
-        height: 33.33vw;
-    }
-
     .hottubtips-template .elementor-section h1,
     .hottubtips-template .elementor-section .h-one {
-        font-size:   45px;
+        font-size: 45px;
         line-height: 54px;
-        margin:      40px auto 20px;
+        margin: 40px auto 20px;
     }
 
     .hottubtips-template .elementor-section h2,
     .hottubtips-template .elementor-section .h-two {
-        font-size:   27px;
+        font-size: 27px;
         line-height: 34px;
-        margin:      48px 0 0;
+        margin: 48px 0 0;
     }
 
     .hottubtips-template .elementor-section h4,
     .hottubtips-template .elementor-section .h-four {
-        font-size:   20px;
+        font-size: 20px;
         line-height: 30px;
     }
 }
 
 @media(max-width: 767px) {
-    .ht101-hero-secton {
-        background: url('<?php echo $mobile_image_url;?>') center no-repeat;
-        background-size: cover;
-        height: 100vw;
-    }
-
+    .hottubtips-template h1,
     .hottubtips-template .elementor-section h1,
     .hottubtips-template .elementor-section .h-one,
     .hottubtips-template h1.titleInfo {
-        font-size:    40px;
-        line-height:  48px;
+        font-size: 40px;
+        line-height: 48px;
         padding-lefT: 0;
     }
 
     .hottubtips-template .elementor-section h2,
     .hottubtips-template .elementor-section .h-two {
-        font-size:   24px;
+        font-size: 24px;
         line-height: 30px;
     }
 
     .hottubtips-template .elementor-section h3,
     .hottubtips-template .elementor-section .h-three {
-        font-size:      18px;
-        line-height:    23px;
+        font-size: 18px;
+        line-height: 23px;
         letter-spacing: 2px;
-        margin:         40px 0 6px;
+        margin: 40px 0 6px;
     }
 
     .hottubtips-template .elementor-section h4,
     .hottubtips-template .elementor-section .h-four {
-        font-size:   18px;
+        font-size: 18px;
         line-height: 27px;
     }
 
     .hottubtips-template .elementor-section h5,
     .hottubtips-template .elementor-section .h-five,
     .hottubtips-template .byline {
-        font-size:   15px;
+        font-size: 15px;
         line-height: 19px;
     }
-    
-    .hottubtips-template .byline {
-        -webkit-box-orient:     vertical;
-        -webkit-box-direction:  normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
+
+
 
     .hottubtips-template .elementor-section h6,
     .hottubtips-template .elementor-section .h-six {
-        font-size:   14px;
+        font-size: 14px;
         line-height: 19px;
     }
 
@@ -425,32 +449,13 @@ remove injected external link icon from main theme
     .hottubtips-template .elementor-section li,
     .hottubtips-template .elementor-section .paragraph,
     .hottubtips-template .elementor-section .list-item {
-        font-size:   18px;
-        line-height: 27px;  
+        font-size: 18px;
+        line-height: 27px;
         font-weight: 400;
     }
-    
+
     .hottubtips-template .fa-external-link-alt .blogInfo {
         margin: 16px auto 16px 0;
     }
-    .hottubtips-template .blogInfo {
-        margin-top: 32px;
-    }
-    .hottubtips-template .htintro {
 
-        padding: 0 24px !important;
-    
-    }
-    
-    .hottubtips-template .titleInfo {
-    
-        padding: 0 0 20px 0px !important;
-    
-    }
-    
-    .hottubtips-template .blogInfo {
-    
-        padding: 0 24px !important;
-    
-    }
 }
