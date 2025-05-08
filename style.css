@@ -202,6 +202,7 @@ remove injected external link icon from main theme
 .hottubtips-template .elementor-section .block-quote {
     position: relative;
     padding:  0 32px;
+    font-stlye: italic;
 }
 
 .hottubtips-template .elementor-section a {
@@ -420,7 +421,7 @@ remove injected external link icon from main theme
 
     .hottubtips-template .elementor-section h3,
     .hottubtips-template .elementor-section .h-three {
-        margin:         8px 0;
+        margin:         32px 8px;
         font-size:      18px;
         line-height:    23px;
         letter-spacing: 2px;
